@@ -4,7 +4,7 @@ import { Text } from 'react-native';
 class Keyboard extends React.Component {
   render() 
   {
-    return <Text>Olá, mundo!</Text>;
+    return <Text>Keyboard</Text>;
   }
 }
 
