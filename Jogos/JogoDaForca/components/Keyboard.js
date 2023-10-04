@@ -17,8 +17,7 @@ class Keyboard extends React.Component {
           alfabeto.map((letter) => (
 
             <TouchableOpacity key={letter} 
-              style={styles.botao} 
-              onPress={() => this.props.onPress(letter)}
+              style={styles.botao}
             >
 
             <Text style={styles.letraKeyboard}>{letter}</Text>

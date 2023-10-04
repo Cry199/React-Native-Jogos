@@ -25,9 +25,10 @@ export const styles = StyleSheet.create(
   baseKeyboard:{
     marginTop: 20,
     gridTemplateColumns: 'repeat(auto-fit, minmax(50px, 1fr))',
-    margin: '0.1em',
+    marginLeft: 20,
+    marginRight: 20,
     flexDirection: 'row', 
-    flexWrap: 'wrap' 
+    flexWrap: 'wrap'
   },
 
   letraKeyboard:{
