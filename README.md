@@ -1,6 +1,6 @@
 # React-Native-Jogos
 
-## Expo – Executando Localmente
+## Expo
 
 * Comando para criar um projeto Expo:
 - npx create-expo-app olamundo
