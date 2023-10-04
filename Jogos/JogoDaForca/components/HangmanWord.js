@@ -9,8 +9,8 @@ class HangmanWord extends React.Component {
     super(props);
 
     this.state = {
-      palavra: 'abacaxi',
-      guessedLetters: ['a', 'j'],
+      palavra: props.palavra,
+      guessedLetters: ['a', 'b', 'c'],
     };
   }
 
