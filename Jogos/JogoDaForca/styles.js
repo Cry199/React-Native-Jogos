@@ -7,6 +7,8 @@ export const styles = StyleSheet.create(
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    margin: '2em',
+    width: '375px',
   },
 
   titulo:{
@@ -20,11 +22,62 @@ export const styles = StyleSheet.create(
     position : 'relative',
   },
 
+  baseKeyboard:{
+    marginTop: 20,
+    gridTemplateColumns: 'repeat(auto-fit, minmax(50px, 1fr))',
+    margin: '0.1em',
+    flexDirection: 'row', 
+    flexWrap: 'wrap' 
+  },
+
+  letraKeyboard:{
+    textTransform: 'uppercase',
+    fontFamily: 'monospace',
+    fontSize: 40,
+  },
+
+  botao:{
+    width: 50,
+    height: 50,
+    backgroundColor: '#eee',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 20,
+    marginLeft: 20
+  },
+
   baseDoJogo:{
     height: 10,
     width: 250,
     backgroundColor: '#000',
     marginLeft: 80,
+  },
+
+  baseTelaPontilhado:{
+    display: 'flex',
+    flexDirection: 'row',
+    
+    alignContent: 'center',
+    justifyContent: 'center',
+    margin: 10,
+    textTransform: 'uppercase',
+    fontFamily: 'monospace',
+  },
+  
+  palavra:{
+    fontSize: 40,
+    fontWeight: 'bold',
+    marginTop: 20,
+    marginHorizontal: 5,
+    borderBottomWidth: 5, 
+    borderBottomColor: 'black', 
+    borderStyle: 'solid',
+    borderColor: 'black',
+    height: 50, 
+  },
+
+  letra:{
+    opacity: 0,
   },
 
   vertical:{
@@ -56,15 +109,68 @@ export const styles = StyleSheet.create(
   head:{
     height: 50,
     width: 50,
-    border: "10px solid black",
+    backgroundColor: 'black',
     borderRadius: 50,
     marginLeft: 200,
     position: 'absolute',
     top: 40,
     right: 20,
     padding: 10,
-},
+  },
 
+  corpo:{
+    height: 70,
+    width: 10,
+    backgroundColor: 'black',
+    marginLeft: 200,
+    position: 'absolute',
+    top: 80,
+    right: 40,
+  },
+
+  bracoEsquerdo:{
+    height: 10,
+    width: 50,
+    backgroundColor: 'black',
+    marginLeft: 200,
+    position: 'absolute',
+    top: 95,
+    right: 40,
+    transform: 'rotate(45deg)',
+  },
+
+  bracoDireito:{
+    height: 10,
+    width: 50,
+    backgroundColor: 'black',
+    marginLeft: 200,
+    position: 'absolute',
+    top: 95,
+    right: 0,
+    transform: 'rotate(-45deg)',
+  },
+
+  pernaEsquerda:{
+    height: 10,
+    width: 50,
+    backgroundColor: 'black',
+    marginLeft: 200,
+    position: 'absolute',
+    top: 159,
+    right: 1,
+    transform: 'rotate(45deg)',
+  },
+
+  pernaDireita:{
+    height: 10,
+    width: 50,
+    backgroundColor: 'black',
+    marginLeft: 200,
+    position: 'absolute',
+    top: 158,
+    right: 38,
+    transform: 'rotate(-45deg)',
+  },
 
 
 });
