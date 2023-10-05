@@ -6,8 +6,8 @@ const alfabeto = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 
 'u', 'v', 'w', 'x', 'y', 'z', 'ç'];
 
-class Keyboard extends React.Component {
-
+class Keyboardd extends React.Component 
+{
   render() 
   {
     return (
@@ -16,11 +16,10 @@ class Keyboard extends React.Component {
         {
           alfabeto.map((letter) => (
 
-            <TouchableOpacity key={letter} 
-              style={styles.botao}
-            >
+            <TouchableOpacity key={letter} style={styles.botao}
+              onPress={() => this.props.onLetterPress(letter)}> 
 
-            <Text style={styles.letraKeyboard}>{letter}</Text>
+              <Text style={styles.letraKeyboard}>{letter}</Text>
 
             </TouchableOpacity>
           ))
@@ -31,4 +30,4 @@ class Keyboard extends React.Component {
   }
 }
 
-export default Keyboard;
+export default Keyboardd;

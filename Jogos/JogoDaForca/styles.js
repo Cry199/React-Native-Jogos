@@ -11,6 +11,10 @@ export const styles = StyleSheet.create(
     width: '375px',
   },
 
+  input: {
+    direction: 'none',
+  },
+
   titulo:{
     fontSize: 30,
     fontWeight: 'bold',
@@ -74,12 +78,11 @@ export const styles = StyleSheet.create(
     borderBottomColor: 'black', 
     borderStyle: 'solid',
     borderColor: 'black',
-    height: 50, 
+    height: 50,
+    minWidth: 50,
   },
 
-  letra:{
-    opacity: 0,
-  },
+  
 
   vertical:{
     height: 250,

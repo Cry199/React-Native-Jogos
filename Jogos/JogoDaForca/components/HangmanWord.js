@@ -10,7 +10,7 @@ class HangmanWord extends React.Component {
 
     this.state = {
       palavra: props.palavra,
-      guessedLetters: ['a', 'b', 'c'],
+      guessedLetters: props.guessedLetters,
     };
   }
 
@@ -18,15 +18,17 @@ class HangmanWord extends React.Component {
   {
     return (
       <View style={[styles.baseTelaPontilhado, { flexWrap: 'wrap' }]}>  
-      {this.state.palavra.split('').map((letra, index) => {
-        return (
-          <Text key={index} style={styles.palavra}>
-            <Text style={ [styles.letra, {opacity: this.state.guessedLetters.indexOf(letra) !== -1 ? 1 : 0 }]}>
-              {letra}
+      {
+        this.state.palavra.split('').map((letra, index) => {
+          return (
+            <Text key={index} style={styles.palavra}>
+              <Text>
+                {letra}
+              </Text>
             </Text>
-          </Text>
-        );
-      })}
+          );
+        })
+      }
     </View>
     );
   }

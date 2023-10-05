@@ -10,8 +10,7 @@ const bracoEsquerdoStyle = styles.bracoEsquerdo;
 const corpoStyle = styles.corpo;
 const headStyle = styles.head;
 
-
-
+const corpoTodo = [headStyle, corpoStyle, bracoEsquerdoStyle, bracoDireitoStyle, pernaEsquerdaStyle, pernaDireitaStyle];
 
 class HangmanDrawing extends React.Component {
   
@@ -28,13 +27,13 @@ class HangmanDrawing extends React.Component {
     return (
       <View style={styles.baseTela}>
       
-        
-        <View style={pernaEsquerdaStyle}></View>
-        <View style={pernaDireitaStyle}></View>
-        <View style={bracoDireitoStyle}></View>
-        <View style={bracoEsquerdoStyle}></View>
-        <View style={corpoStyle}></View>
-        <View style={headStyle}></View>
+        {
+          corpoTodo.map((item, index) => {
+            if (index < this.state.numerosDeErros) {
+              return <View key={index} style={item}></View>;
+            }
+          })
+        }
 
         <View style={styles.verticalHeadP}></View>
         <View style={styles.horizontalLine}></View>
