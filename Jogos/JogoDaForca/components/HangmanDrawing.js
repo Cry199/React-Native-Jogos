@@ -9,8 +9,9 @@ const bracoDireitoStyle = styles.bracoDireito;
 const bracoEsquerdoStyle = styles.bracoEsquerdo;
 const corpoStyle = styles.corpo;
 const headStyle = styles.head;
+const nada = styles.nada; // nada é um estilo vazio
 
-const corpoTodo = [headStyle, corpoStyle, bracoEsquerdoStyle, bracoDireitoStyle, pernaEsquerdaStyle, pernaDireitaStyle];
+const corpoTodo = [nada, headStyle, corpoStyle, bracoEsquerdoStyle, bracoDireitoStyle, pernaEsquerdaStyle, pernaDireitaStyle];
 
 class HangmanDrawing extends React.Component {
   
@@ -19,13 +20,20 @@ class HangmanDrawing extends React.Component {
 
     this.state = {
       numerosDeErros: props.numerosDeErros,
+      
     };
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.numerosDeErros !== this.props.numerosDeErros) {
+      this.setState({ numerosDeErros: this.props.numerosDeErros });
+    }
   }
 
   render() 
   {
     return (
-      <View style={styles.baseTela}>
+      <View style={styles.baseTela} selectable={true}>
       
         {
           corpoTodo.map((item, index) => {

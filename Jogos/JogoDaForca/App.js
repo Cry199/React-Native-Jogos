@@ -8,8 +8,7 @@ import HangmanWord from './components/HangmanWord.js';
 import Keyboardd from './components/Keyboardd.js';
 
 
-const palavrasAleatorias = ['abacaxi', 'banana', 'computador', 'elefante', 
-'floresta', 'girassol', 'hamburguer', 'internet', 'jacare', 'kiwi'];
+const palavrasAleatorias = ['kiwi'];
  
 function App() {
 
@@ -18,29 +17,40 @@ function App() {
   });
 
   const [letrasIncorrect, setLetrasIncorrect] = useState([]);
-  const incorrect = letrasIncorrect.filter(letra => !pAleatorias.includes(letra));
+
+  const incorrect = letrasIncorrect.filter((i) => !pAleatorias.includes(i));
+
+  console.log(`incorrect: ${incorrect}`);
+  console.log(`incorrect: ${incorrect.length}`);
+
+  console.log(`letrasIncorrect: ${letrasIncorrect}`);
+  console.log(`letrasIncorrect: ${letrasIncorrect.length}`);
 
   function addLetrasIncorrect(key) {
     if (letrasIncorrect.includes(key)) return
-
+  
     setLetrasIncorrect((letrasIncorrect) => [...letrasIncorrect, key])
   }
 
-  handleLetterPress = (letter) => {
+  handleLetterPress = (letter) => 
+  {
+    console.log(`handleLetterPress: ${letter}`);
     addLetrasIncorrect(letter);
-  } 
+  }  
   
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
 
+      <Text style={styles.nada}>{incorrect}</Text>
+
       <Text style={styles.titulo}>Jogo Da Forca</Text>
 
-      <HangmanDrawing numerosDeErros={incorrect.length}/>
+      <HangmanDrawing numerosDeErros={incorrect.length} />
       
       <HangmanWord palavra={pAleatorias} guessedLetters={letrasIncorrect} />
 
-      <Keyboardd onLetterPress={this.handleLetterPress}/>
+      <Keyboardd onLetterPress={this.handleLetterPress} />
 
     </View>
   );
