@@ -37,7 +37,7 @@ class HangmanDrawing extends React.Component {
       
         {
           corpoTodo.map((item, index) => {
-            if (index < this.state.numerosDeErros) {
+            if (index <= this.state.numerosDeErros) {
               return <View key={index} style={item}></View>;
             }
           })

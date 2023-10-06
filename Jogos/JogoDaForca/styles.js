@@ -8,7 +8,16 @@ export const styles = StyleSheet.create(
     alignItems: 'center',
     justifyContent: 'center',
     margin: '2em',
-    width: '375px',
+    width: '99%',
+    height : '95%',
+  },
+
+  palavrasErradas:{
+    fontSize: 40,
+    fontWeight: 'bold',
+    marginTop: 20,
+    marginHorizontal: 5,
+    lineHeight: 50,
   },
 
   input: {
@@ -81,8 +90,6 @@ export const styles = StyleSheet.create(
     height: 50,
     minWidth: 50,
   },
-
-  
 
   vertical:{
     height: 250,
