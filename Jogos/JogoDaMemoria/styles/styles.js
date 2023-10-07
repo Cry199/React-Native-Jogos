@@ -10,9 +10,22 @@ export const styles = StyleSheet.create(
     },
 
     titulo: {
-        fontSize: 30,
+        fontSize: 50,
         fontWeight: 'bold',
         color: 'black',
+        margin: 20,
+    },
+
+    imgTela:{
+        width: '95%',
+        height: '50%',
+    },
+
+    titulo2: {
+        fontSize: 60,
+        fontWeight: 'bold',
+        color: 'black',
+        margin: 20,
     },
 
     baseDoJogo:{
@@ -42,6 +55,17 @@ export const styles = StyleSheet.create(
         width: 80,
         height: 80,
     },
+
+    botao:{
+        backgroundColor: 'white',
+        width: 150,
+        height: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 10,
+        margin: 10,
+    },
+
 
 });
   
