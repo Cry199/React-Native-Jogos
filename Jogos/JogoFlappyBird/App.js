@@ -11,6 +11,8 @@ import Constants from './components/Constants/Constants.js';
 import Physics from './components/Physics.js';
 import Wall from './components/Wall.js';
 
+
+
 export default class App extends React.Component {
 
   constructor(props) {
@@ -32,9 +34,10 @@ export default class App extends React.Component {
     Constants.MAX_WIDTH, 50, { isStatic: true });
 
     let ceiling = Matter.Bodies.rectangle(Constants.MAX_WIDTH / 2, 25, 
-    Constants.MAX_WIDTH, { isStatic: true });
+    Constants.MAX_WIDTH, 50, { isStatic: true });
 
-    Matter.World.add(world, [bird, floor]);
+
+    Matter.World.add(world, [bird, floor, ceiling]);
 
     return {
       physics: { engine: engine, world: world },
