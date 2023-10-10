@@ -5,4 +5,6 @@ export default Constants = {
     MAX_HEIGHT: Dimensions.get("screen").height,
     GAP_SIZE: 300,
     PIPE_WIDTH: 100,
+    BIRD_WIDTH: 50,
+    BIRD_HEIGHT: 41,
 }
