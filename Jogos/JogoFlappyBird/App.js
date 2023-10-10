@@ -1,7 +1,7 @@
 import Matter from 'matter-js';
 import React from 'react';
 
-import { View } from 'react-native';
+import { View, Text, TouchableOpacity} from 'react-native';
 import { GameEngine } from 'react-native-game-engine';
 
 import { styles } from './assets/styles/stylesGeral.js';
@@ -38,6 +38,10 @@ export default class App extends React.Component {
 
     this.gameEngine = null;
     this.entities = this.setupWorld();
+
+    this.state = {
+      running: true
+    };
   }
 
   setupWorld = () => 
@@ -69,6 +73,12 @@ export default class App extends React.Component {
 
     Matter.World.add(world, [bird, floor, ceiling, pipe1, pipe2, pipe3, pipe4]);
 
+    Matter.Events.on(engine, 'collisionStart', (event) => {
+      var pairs = event.pairs;
+
+      this.gameEngine.dispatch({ type: "game-over" });
+    });
+
     return {
       physics: { engine: engine, world: world },
       bird: { body: bird, size: [50,50], color: 'red' ,renderer: Bird },
@@ -79,17 +89,48 @@ export default class App extends React.Component {
       pipe3: { body: pipe3, size: [Constants.PIPE_WIDTH, pipe3Height], color: 'green', renderer: Wall },
       pipe4: { body: pipe4, size: [Constants.PIPE_WIDTH, pipe4Height], color: 'green', renderer: Wall },
     }
-
   };
+
+  onEvent = (e) =>{
+    if(e.type === "game-over")
+    {
+      this.setState({
+        running: false
+      });
+    }
+  }
+
+  reset = () => {
+    this.gameEngine.swap(this.setupWorld());
+    this.setState({
+      running: true
+    });
+  }
+  
   render() {
     return (
       <View style={styles.container}>
         <GameEngine ref={(ref) => { this.gameEngine = ref; }} 
-          style={styles.baseDoJogo}
+          style={styles.gameContainer}
+          onEvent={this.onEvent}
+          running={this.state.running}
           systems={[Physics]}
           entities={this.entities} >
-            
         </GameEngine>
+
+        {
+          !this.state.running &&
+          <TouchableOpacity style={styles.fullScreenButton} onPress={() => {this.reset()}}>
+
+            <View style={styles.fullScreen}>
+
+              <Text style={styles.gameOverText}>Game Over</Text>
+              <Text style={styles.gameOverSubText}>Jogar novamente?</Text>
+
+            </View>
+
+          </TouchableOpacity>
+        }
       </View>
     );
   }
