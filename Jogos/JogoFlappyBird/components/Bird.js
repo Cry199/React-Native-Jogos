@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Image, Animated } from "react-native";
-import Images from '../assets/Images.js';
 
+import Images from '../assets/Images.js';
 
 export default class Bird extends Component 
 {

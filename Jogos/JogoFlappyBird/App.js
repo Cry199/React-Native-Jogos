@@ -9,30 +9,8 @@ import Images from './assets/Images.js';
 
 import Bird from './components/Bird.js';
 import Constants from './components/Constants/Constants.js';
-import Physics from './components/Physics.js';
-import Wall from './components/Wall.js';
+import Physics, { resetPipes } from './components/Physics.js';
 import Floor from './components/Floor.js';
-
-
-export const randomBetween = (min, max) => 
-{
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-export const generatePipes = () => 
-{
-  let topPipeHeight = randomBetween(100, (Constants.MAX_HEIGHT / 2) - 100);
-  let bottomPipeHeight = Constants.MAX_HEIGHT - topPipeHeight - Constants.GAP_SIZE;
-
-  let sizes = [topPipeHeight, bottomPipeHeight];
-
-  if(Math.random() < 0.5)
-  {
-    sizes = sizes.reverse();
-  }
-
-  return sizes;
-}
 
 export default class App extends React.Component {
 
@@ -43,7 +21,8 @@ export default class App extends React.Component {
     this.entities = this.setupWorld();
 
     this.state = {
-      running: true
+      running: true,
+      score: 0,
     };
   }
 
@@ -93,13 +72,19 @@ export default class App extends React.Component {
       this.setState({
         running: false
       });
+    } else if (e.type === "score") {
+      this.setState({
+        score: this.state.score + 1
+      });
     }
   }
 
   reset = () => {
+    resetPipes();
     this.gameEngine.swap(this.setupWorld());
     this.setState({
-      running: true
+      running: true,
+      score: 0,
     });
   }
   
@@ -116,6 +101,8 @@ export default class App extends React.Component {
           systems={[Physics]}
           entities={this.entities} >
         </GameEngine>
+
+        <Text style={styles.score}>{this.state.score}</Text>
 
         {
           !this.state.running &&

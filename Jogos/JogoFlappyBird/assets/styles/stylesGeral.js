@@ -47,6 +47,17 @@ export const styles = StyleSheet.create(
         alignItems: 'center',
     },
 
+    score: {
+        position: 'absolute',
+        color: 'white',
+        fontSize: 72,
+        top: 50,
+        left: Constants.MAX_WIDTH / 2 - 20,
+        textShadowColor: '#444444',
+        textShadowOffset: { width: 2, height: 2},
+        textShadowRadius: 2,
+    },
+
     gameOverText: {
         color: 'white',
         fontSize: 48,
