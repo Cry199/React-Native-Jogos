@@ -11,3 +11,4 @@
 
 * Iniciando o projeto para ser executado pelo Expo Go:
 - npx expo start --tunnel
+
