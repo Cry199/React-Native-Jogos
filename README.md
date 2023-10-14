@@ -180,7 +180,7 @@ O jogo possui uma tela simples com o pássaro, canos e placar.
 -   Placar online
 -   Tela de configurações
 
-Confira neste Snack tem apenas a lógica: https://snack.expo.dev/@cry199/a6897e
+Confira neste Snack tem apenas a lógica: https://snack.expo.dev/@cry199/a6897e <br>
 Confira neste Snack Final: https://snack.expo.dev/@cry199/b6167e
 
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoFlappyBird)
