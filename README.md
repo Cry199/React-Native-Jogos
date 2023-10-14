@@ -99,17 +99,86 @@ Confira o projeto neste Snack: https://snack.expo.dev/@cry199/88eed4
 
 ## Puzzle
 
+Jogo de quebra-cabeça simples desenvolvido.
+
+### Funcionalidades
+
+-   Tabuleiro com peças embaralhadas
+-   O jogador move as peças para reconstituir a imagem original
+-   As peças se movem para a posição vazia
+-   O jogo é finalizado quando a imagem é reconstituída
+-   Opção de embaralhar novamente as peças
+
+### Telas
+
+O jogo possui uma tela simples com o tabuleiro de peças.
+
+### Possíveis melhorias
+
+-   Mais quebra-cabeças e imagens
+-   Diferentes níveis de dificuldade
+-   Animações ao mover as peças
+-   Seleção de imagem da galeria
+-   Placar online
+
 Confira o projeto neste Snack: https://snack.expo.dev/@cry199/a737a8
 
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoPuzzle)
 
 ## Whac-A-Mole
+Jogo Whac-A-Mole clássico desenvolvido.
+
+### Funcionalidades
+
+-   Tabuleiro com buracos onde os personagens podem aparecer
+-   Os personagens aparecem de forma aleatória nos buracos
+-   O jogador deve tocar nos personagens para marcar pontos
+-   Quanto mais rápido o jogador tocar, mais pontos ele ganha
+-   Placar com pontuação atual
+-   Reinicia o jogo automaticamente
+
+### Telas
+
+O jogo possui uma tela simples com o tabuleiro e o placar.
+
+### Possíveis melhorias
+
+-   Sons e efeitos sonoros
+-   Animações nos personagens
+-   Mais personagens e níveis
+-   Placar online
+-   Tela de configurações
+- 
 Confira o projeto neste Snack: https://snack.expo.dev/@cry199/ae5764
 
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoWhacKaMole)
 
 
 ## Flappy Bird
+
+Clone do clássico Flappy Bird.
+
+### Funcionalidades
+
+-   O jogador controla um pássaro que deve passar entre os canos
+-   A cada cano ultrapassado, o jogador pontua
+-   O pássaro cai naturalmente e deve ser mantido no ar com toques na tela
+-   Quando o pássaro bate em um cano, o jogo acaba
+-   Placar com a pontuação atual
+-   Reinicia o jogo automaticamente
+
+
+### Telas
+
+O jogo possui uma tela simples com o pássaro, canos e placar.
+
+### Possíveis melhorias
+
+-   Animações e sons
+-   Mais obstáculos
+-   Modos de jogo infinito e por tempo
+-   Placar online
+-   Tela de configurações
 
 Confira neste Snack tem apenas a lógica: https://snack.expo.dev/@cry199/a6897e
 Confira neste Snack Final: https://snack.expo.dev/@cry199/b6167e
@@ -140,6 +209,11 @@ Instale as dependências em cada pasta de projeto:
 
 Execute em um emulador ou dispositivo:
 
+    expo start
+    expo start --android
+
+ou 
+	
     npx react-native run-android
     npx react-native run-ios
 
