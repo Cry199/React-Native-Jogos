@@ -22,7 +22,7 @@ const Physics = (entities, { touches, time }) => {
       } 
       else 
       {
-        Matter.Body.translate(cactus, { x: -12, y: 0 });
+        Matter.Body.translate(cactus, { x: -10, y: 0 });
       }
     }
 
