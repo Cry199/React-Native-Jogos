@@ -224,8 +224,30 @@ Em progresso
 (❁´◡`❁)
 
 ##  Jogo Do TRex
-Em progresso
-(❁´◡`❁)
+Recriação do jogo do dinossauro do Google Chrome
+
+### Funcionalidades
+- O jogador controla um dinossauro que deve desviar de cactos
+- Ao pular os cactos
+- O dinossauro corre infinitamente para a frente
+- O jogo acaba se o dinossauro bater em um cacto
+- Placar com a pontuação atual Em progresso (❁´◡`❁)
+- Reinicia o jogo automaticamente ao colidir
+
+### Tela
+O jogo possui uma tela simples com o dinossauro correndo e os cactos.
+
+### Possíveis melhorias
+- Animações e sons
+- Obstáculos aleatórios
+- Modo noturno
+- Ranking online
+- Tela de configurações
+
+Confira neste Snack tem apenas a lógica:  https://snack.expo.dev/@cry199/186cde <br>
+Confira neste Snack Final: Em progresso (❁´◡`❁)
+
+[Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoDoTRex)
 
 ## Como executar
 Para testar os jogos, clone este repositório:
