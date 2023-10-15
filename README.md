@@ -14,6 +14,7 @@ Este repositório contém alguns jogos de exemplo criados com React Native. São
 - [Slot Machine Game](#slot-machine)
 - [Jogo da Cobrinha](#jogo-da-cobrinha)
 - [Campo Minado](#campo-minado)
+- [Jogo Do Dino / T-Rex](#jogo-do-trex)
 
 
 ## Jogo Da Velha
@@ -219,6 +220,10 @@ Confira o projeto neste Snack: https://snack.expo.dev/@cry199/3e5321
 
 
 ##  Slot Machine
+Em progresso
+(❁´◡`❁)
+
+##  Jogo Do TRex
 Em progresso
 (❁´◡`❁)
 
