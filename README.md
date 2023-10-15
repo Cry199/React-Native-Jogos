@@ -15,6 +15,7 @@ Este repositório contém alguns jogos de exemplo criados com React Native. São
 - [Jogo da Cobrinha](#jogo-da-cobrinha)
 - [Campo Minado](#campo-minado)
 - [Jogo Do Dino / T-Rex](#jogo-do-trex)
+- [Tetris](#tetris)
 
 
 ## Jogo Da Velha
@@ -222,6 +223,11 @@ Confira o projeto neste Snack: https://snack.expo.dev/@cry199/3e5321
 ##  Slot Machine
 Em progresso
 (❁´◡`❁)
+
+##  Tetris
+Em progresso
+(❁´◡`❁)
+
 
 ##  Jogo Do TRex
 Recriação do jogo do dinossauro do Google Chrome
