@@ -244,7 +244,7 @@ O jogo possui uma tela simples com o dinossauro correndo e os cactos.
 - Ranking online
 - Tela de configurações
 
-Confira neste Snack tem apenas a lógica:  https://snack.expo.dev/@cry199/186cde
+Confira neste Snack tem apenas a lógica:  https://snack.expo.dev/@cry199/186cde <br>
 Confira neste Snack Final: Em progresso (❁´◡`❁)
 
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoDoTRex)
