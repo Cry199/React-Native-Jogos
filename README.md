@@ -180,7 +180,7 @@ O jogo possui uma tela simples com o pássaro, canos e placar.
 -   Placar online
 -   Tela de configurações
 
-Confira neste Snack tem apenas a lógica: https://snack.expo.dev/@cry199/a6897e <br>
+Confira neste Snack tem apenas a lógica: https://snack.expo.dev/@cry199/a6897e
 Confira neste Snack Final: https://snack.expo.dev/@cry199/b6167e
 
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoFlappyBird)
@@ -191,8 +191,32 @@ Em progresso
 (❁´◡`❁)
 
 ## Jogo da Cobrinha
-Em progresso
-(❁´◡`❁)
+
+Um clássico jogo da cobrinha. 
+
+### Funcionalidades
+
+-   A cobra inicia com um tamanho mínimo
+-   Ao comer o alimento, a cobra aumenta de tamanho
+-   O jogador controla a direção da cobrinha usando o teclado
+-   A cobrinha não pode bater nas bordas da tela ou em si mesma
+-   Reinicia o jogo automaticamente ao colidir
+
+### Telas
+
+O jogo possui uma tela simples mostrando a cobrinha, a comida.
+
+### Possíveis melhorias
+
+-   Animações e sons
+-   Tema visual diferente
+-   Modo duas cobrinhas
+-   Placar online
+-   Controles por toque
+
+Confira o projeto neste Snack: https://snack.expo.dev/@cry199/3e5321
+[Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoDaCobrinha)
+
 
 ##  Slot Machine
 Em progresso
