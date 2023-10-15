@@ -150,7 +150,7 @@ O jogo possui uma tela simples com o tabuleiro e o placar.
 -   Mais personagens e níveis
 -   Placar online
 -   Tela de configurações
-- 
+  
 Confira o projeto neste Snack: https://snack.expo.dev/@cry199/ae5764
 
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoWhacKaMole)
@@ -237,7 +237,7 @@ Recriação do jogo do dinossauro do Google Chrome
 - Ao pular os cactos
 - O dinossauro corre infinitamente para a frente
 - O jogo acaba se o dinossauro bater em um cacto
-- Placar com a pontuação atual Em progresso (❁´◡`❁)
+- Placar com a pontuação atual Em progresso (●'◡'●)
 - Reinicia o jogo automaticamente ao colidir
 
 ### Tela
