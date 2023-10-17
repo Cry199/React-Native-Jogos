@@ -1,14 +1,25 @@
 import Matter from 'matter-js';
 import Constants from '../components/Constants';
 
-const Physics = (entities, { touches, time }) => {
-    
+let firstTime = true;
+let dinoPositionFirst = 0;
+
+const Physics = (entities, { touches, time }) => 
+{    
     let engine = entities.physics.engine;
     let world = entities.physics.world;
     let dino = entities.dino.body;
 
-    touches.filter(t => t.type === "press").forEach(t => {
-      if (dino.position.y >= 540 && dino.position.y <= 550) {
+    touches.filter(t => t.type === "press").forEach(t => { 
+      
+      if (firstTime == true)
+      {
+        dinoPositionFirst = dino.position.y;
+        firstTime = false;
+      }
+
+      if (dino.position.y >= (dinoPositionFirst - 2) && dino.position.y <= (dinoPositionFirst + 2)) 
+      {
         Matter.Body.applyForce(dino, dino.position, { x: 0, y: -0.1 });
       }
     });
