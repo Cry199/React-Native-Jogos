@@ -1,4 +1,5 @@
 
+
 # Jogos em React Native
 Este repositório contém alguns jogos de exemplo criados com React Native. São projetos simples para demonstrar como construir jogos cross-platform com React Native.
 
@@ -44,6 +45,7 @@ Confira o projeto neste Snack: https://snack.expo.dev/@cry199/26dd9a
 
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoDaMemoria)
 
+[TOP (￣y▽,￣)╭ ](#início)
 
 ## Jogo da Forca
 
@@ -72,6 +74,8 @@ O jogo possui uma tela simples com a forca, os traços da palavra secreta, as le
 Confira o projeto neste Snack: https://snack.expo.dev/@cry199/634c88]
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoDaForca)
 
+[TOP (￣y▽,￣)╭ ](#início)
+
 ## Jogo Da Memoria
 
 Jogo da memória clássico.
@@ -98,6 +102,8 @@ O jogo possui uma tela simples com o tabuleiro.
 
 Confira o projeto neste Snack: https://snack.expo.dev/@cry199/88eed4
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoDaMemoria)
+
+[TOP (￣y▽,￣)╭ ](#início)
 
 ## Puzzle
 
@@ -127,6 +133,8 @@ Confira o projeto neste Snack: https://snack.expo.dev/@cry199/a737a8
 
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoPuzzle)
 
+[TOP (￣y▽,￣)╭ ](#início)
+
 ## Whac-A-Mole
 Jogo Whac-A-Mole clássico desenvolvido.
 
@@ -155,6 +163,7 @@ Confira o projeto neste Snack: https://snack.expo.dev/@cry199/ae5764
 
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoWhacKaMole)
 
+[TOP (￣y▽,￣)╭ ](#início)
 
 ## Flappy Bird
 
@@ -186,6 +195,8 @@ Confira neste Snack tem apenas a lógica: https://snack.expo.dev/@cry199/a6897e 
 Confira neste Snack Final: https://snack.expo.dev/@cry199/b6167e
 
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoFlappyBird)
+
+[TOP (￣y▽,￣)╭ ](#início)
 
 ## Campo Minado
 
@@ -219,6 +230,7 @@ O jogo possui uma tela simples mostrando a cobrinha, a comida.
 Confira o projeto neste Snack: https://snack.expo.dev/@cry199/3e5321
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoDaCobrinha)
 
+[TOP (￣y▽,￣)╭ ](#início)
 
 ##  Slot Machine
 Em progresso
@@ -254,6 +266,8 @@ Confira neste Snack tem apenas a lógica:  https://snack.expo.dev/@cry199/186cde
 Confira neste Snack Final: Em progresso (❁´◡`❁)
 
 [Arquivo do Projeto](https://github.com/Cry199/React-Native-Jogos/tree/main/Jogos/JogoDoTRex)
+
+[TOP (￣y▽,￣)╭ ](#início)
 
 ## Como executar
 Para testar os jogos, clone este repositório:
